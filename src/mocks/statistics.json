@@ -1,0 +1,23 @@
+[
+  {
+    "id": 2,
+    "image": "/assets/person-back.png",
+    "alt": "Person Back",
+    "fact": "Hypervigilance is reported in over 70 percent of officers with cumulative critical incident exposure.",
+    "reference": "Andersen et al., Journal of Police and Criminal Psychology, 2016"
+  },
+  {
+    "id": 7,
+    "image": "/assets/police-vehicles.jpg",
+    "alt": "Police Vehicles",
+    "fact": "Chronic stress reduces prefrontal cortex regulation, increasing impulsive emotional responses. This means being more reactive and angry.",
+    "reference": "Arnsten, Nature Reviews Neuroscience, 2009"
+  },
+  {
+    "id": 14,
+    "image": "/assets/police-headdown.jpg",
+    "alt": "Police Head Down",
+    "fact": "Law enforcement officers have elevated risk of cumulative stress-related health conditions over time.",
+    "reference": "Violanti et al., American Journal of Industrial Medicine, 2013"
+  }
+]

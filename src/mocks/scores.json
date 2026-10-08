@@ -1,0 +1,74 @@
+{
+  "lowStress": {
+    "title": "Low Stress",
+    "description": "Take action now so you don’t become another “I wish I started earlier” story.",
+    "struggles": [
+      "Feel drained after shifts, but brush it off as normal",
+      "Snapping at home but still feeling “in control.”",
+      "Sleep’s a bit off, but manageable",
+      "No time or tools to decompress properly",
+      "Worry about ending up like older, burnt-out officers"
+    ],
+    "solutions": [
+      "Build resilience now to avoid long-term damage",
+      "Learn how to reset your nervous system after each shift",
+      "Improve sleep, mindset, and recovery with daily tools",
+      "Understand hypervigilance early and manage it before it hardwires",
+      "Get access to proven strategies used by 1,100+ officers"
+    ]
+  },
+  "mediumStress": {
+    "title": "Medium Stress",
+    "description": "You’re not broken — you’re overloaded. Reverse it now.",
+    "struggles": [
+      "Feeling more irritable and distant from family",
+      "Regular sleep disruption or using alcohol to wind down",
+      "Constantly “on”. Even when off duty",
+      "Increasing emotional numbness and disconnection",
+      "Noticing cracks, but not sure where to start fixing them"
+    ],
+    "solutions": [
+      "Learn practical tools to interrupt the stress spiral",
+      "Re-establish connection with your family and with yourself",
+      "Start journaling, meditation, and decompression routines",
+      "Improve emotional control under pressure",
+      "Use the course to build a sustainable plan before it gets worse"
+    ]
+  },
+  "highStress": {
+    "title": "High Stress",
+    "description": "This is the line between burnout and breakdown. Step in now.",
+    "struggles": [
+      "Feel disconnected from family, often short-tempered or shut down",
+      "Using distractions (alcohol, gambling, porn) to cope",
+      "Frequently exhausted but can’t switch off",
+      "Relationship tension increasing, feeling emotionally flat",
+      "Resentment toward the job and the people around you"
+    ],
+    "solutions": [
+      "Reset your nervous system and stress cycles immediately",
+      "Use proven strategies to reduce hypervigilance and reactivity",
+      "Rebuild your ability to connect at home",
+      "Stop the slide before it turns into a full-blown crash",
+      "Join a private community of officers doing the same work with support"
+    ]
+  },
+  "extremeStress": {
+    "title": "Extreme Stress",
+    "description": "You’ve carried this too long. Don’t wait for rock bottom. This is your turning point.",
+    "struggles": [
+      "Thinking about quitting, walking out, or worse",
+      "Deeply disconnected from family, self, and the job",
+      "Rage, emotional numbness, or constant panic",
+      "Nothing helps anymore. Everything feels too far gone",
+      "Feeling like you are trapped and don’t know how to escape"
+    ],
+    "solutions": [
+      "Immediate access to training designed for crisis recovery",
+      "Lived experience guidance from someone who almost didn’t make it",
+      "A private community of cops who have come back from the edge",
+      "Tools to help you regulate, reconnect, and rebuild",
+      "Confidential, non-judgmental, step-by-step plan to stop the freefall"
+    ]
+  }
+}

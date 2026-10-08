@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@100,200,300,400,500,600,700,800,900&display=swap');
+@import "tailwindcss";
+
+:root {
+  color: #000000;
+  background-color: #f8f2ea;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --color-primary: #f86216;
+  --color-accent: #f8f2ea;
+  --color-text-dark: #000000;
+  --color-gray: #565A7C;
+  
+  --font-archivo-black: 'Archivo Black', sans-serif;
+  --font-archivo: 'Archivo', sans-serif;
+}
