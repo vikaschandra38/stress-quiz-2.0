@@ -12,7 +12,7 @@ const StatisticTriviaFact = ({ index = 2, onClick }) => {
           <img
             src={statistic.image}
             alt={statistic.alt}
-            className="w-full h-full md:h-full md:min-h-96 md:max-h-110 rounded-md object-cover"
+            className="w-full h-full md:h-full md:min-h-96 md:max-h-110 rounded-md object-cover object-top"
           />
         </div>
         {/* Main Text */}
