@@ -1,4 +1,4 @@
-export const EMAIL_WEBHOOK = "https://hook.us2.make.com/97c6s1fkr79zo4dgerexyu7kt9cyn1dn";
+export const EMAIL_WEBHOOK = "https://hook.us2.make.com/2t9ovxbjx66tpqlbn2tdbtietqaczc9f";
 
 export const PAGE_LINKS = {
   reviews: {
