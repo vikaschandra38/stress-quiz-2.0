@@ -27,14 +27,6 @@ const Quiz = () => {
     trackEvent("quiz_started", { total_questions: questions.questions.length });
   }, []);
 
-  // Track funnel stages
-  useEffect(() => {
-    trackEvent("funnel_stage_quiz", {
-      stage: `question_${currentQuestion + 1}`,
-      question: questions.questions[currentQuestion],
-    });
-  }, [currentQuestion]);
-
   const handleAnswerSelect = (score) => {
     setSelectedAnswer(score);
     setShowNext(true);
@@ -76,13 +68,6 @@ const Quiz = () => {
       [currentQuestion]: selectedAnswer,
     };
     setAnswers(newAnswers);
-  
-    // Track answer
-    trackEvent("answer_submitted", {
-      question_number: currentQuestion + 1,
-      answer_score: selectedAnswer,
-      question_text: questions.questions[currentQuestion],
-    });
     handleSetScreen(currentQuestion);
 
     const nextQuestion = currentQuestion + 1;
@@ -100,37 +85,25 @@ const Quiz = () => {
   };
 
   const handleQuizSubmission = () => {
-    // Store the final answer
-    const newAnswers = {
-      ...answers,
-      [currentQuestion]: selectedAnswer,
-    };
-    setAnswers(newAnswers);
-
-    // Track final answer
-    trackEvent("answer_submitted", {
-      question_number: currentQuestion + 1,
-      answer_score: selectedAnswer,
-      question_text: questions.questions[currentQuestion],
-    });
+    const questionResponses = questions.questions.map((question, index) => ({
+      question_number: index + 1,
+      question_text: question,
+      answer_score: answers[index],
+    }));
+    const score = handleRawScore(answers);
 
     trackEvent("quiz_completed", {
       total_questions: questions.questions.length,
-      answers: newAnswers,
+      answers,
+      question_responses: questionResponses,
+      raw_score: score,
     });
 
-    // For now, just log the answers
-    console.log("Quiz submitted with answers:", newAnswers);
-    const score = handleRawScore();
     navigate(PAGE_LINKS.email.previous, { state: { score } });
   }
 
-  const handleRawScore = () => {
-    let total = 0;
-    Object.values(answers).forEach((score) => {
-      total += score;
-    });
-    return total;
+  const handleRawScore = (answerSet) => {
+    return Object.values(answerSet).reduce((total, score) => total + score, 0);
   };
 
 

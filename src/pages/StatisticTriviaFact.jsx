@@ -35,7 +35,11 @@ const StatisticTriviaFact = ({ index = 2, onClick }) => {
           { statistic.blog && (
             <div className="flex flex-col">
               {statistic.blog.map((paragraph, idx) => (
-                <cite key={idx} className="text-black font-normal text-sm md:text-lg text-left mb-2">{paragraph}</cite>
+                <div
+                  key={idx}
+                  className="text-black font-normal text-sm md:text-lg text-left mb-2"
+                  dangerouslySetInnerHTML={{ __html: paragraph }}
+                />
               ))}
             </div>
           )}
